@@ -1,31 +1,44 @@
 body {
-    font-family: Arial;
-    margin: 20px;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    color: darkblue;
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
-    margin: 10px;
+    color: white;
+    margin: 0 10px;
     text-decoration: none;
-    color: black;
 }
 
-nav a:hover {
-    color: blue;
+.container {
+    padding: 20px;
 }
 
-/* MEDIA QUERY (IMPORTANT FOR MARKS) */
-@media (max-width: 600px) {
-    body {
-        background-color: lightgray;
+.club {
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* ✅ REQUIRED MEDIA QUERY */
+@media (max-width: 768px) {
+    header {
+        font-size: 14px;
     }
 
-    nav a {
-        display: block;
-        margin: 5px 0;
+    .container {
+        padding: 10px;
+    }
+
+    .club {
+        font-size: 14px;
     }
 }
