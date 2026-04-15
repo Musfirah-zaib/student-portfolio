@@ -1,19 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Clubs</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Categories</title>
+
+    <style>
+        /* Reset & base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        /* Club Cards */
+        .club {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .club:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .club h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .club p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Club Categories</h1>
+<header>
+    <h1>University Club Categories</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="events.html">Events</a>
+        <a href="join.html">Join</a>
+        <a href="highlights.html">Highlights</a>
+    </nav>
+</header>
 
-    <ul>
-        <li>Technology Clubs</li>
-        <li>Sports Clubs</li>
-        <li>Cultural Clubs</li>
-        <li>Debate Societies</li>
-    </ul>
+<section class="container">
+    <h2>Explore Our Clubs</h2>
+
+    <div class="club">
+        <h3>Technology Clubs</h3>
+        <p>Focus on programming, AI, web development, and innovation. Great for tech enthusiasts.</p>
+    </div>
+
+    <div class="club">
+        <h3>Sports Clubs</h3>
+        <p>Includes football, cricket, basketball, and fitness activities for physical development.</p>
+    </div>
+
+    <div class="club">
+        <h3>Cultural Clubs</h3>
+        <p>Promotes arts, music, drama, and cultural diversity within the university.</p>
+    </div>
+
+    <div class="club">
+        <h3>Debate Societies</h3>
+        <p>Enhance public speaking, critical thinking, and argumentation skills.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 University Clubs Portal</p>
+</footer>
 
 </body>
 </html>
